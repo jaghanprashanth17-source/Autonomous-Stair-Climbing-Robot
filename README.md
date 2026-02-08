@@ -34,7 +34,7 @@ Yaw PID: Measures angular velocity around the vertical axis to correct for mecha
 ## 📊 Performance Evaluation
 Rotation Accuracy: Achieved a Mean Absolute Error (MAE) of 2.23° across multiple 90° and 180° test runs.
 
-Navigation Stability: Achieved a 60% reduction in yaw rate deviation compared to non-PID control systems.
+Navigation Stability: Achieved a 60% reduction in yaw rate deviation compared to non-PID control systems. 
 
 ## 🚀 Future Enhancements
 Encoder Integration: Transitioning to physical wheel encoders for higher speed estimation precision.
