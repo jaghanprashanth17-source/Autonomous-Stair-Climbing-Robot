@@ -23,16 +23,12 @@ Programming: Embedded C++ (Arduino IDE).
 ## ⚙️Core Logic & Implementation
 1. Stair Detection Mechanism
 The robot monitors the Z-axis acceleration in real-time. When a wheel impacts a stair edge, the sudden spike (exceeding a threshold of 2.5) triggers a Torque Boost phase.
-
 Torque Boost: PWM increased to 115-130 to overcome the step height.
-
 Leveling: The system monitors the Pitch Angle; once it returns to a level threshold, the robot resumes base power to conserve energy.
 
 2. PID Speed & Yaw Correction
 To prevent drifting, a dual-PID loop was implemented:
-
 Speed PID: Uses tilt angle feedback to maintain a constant 83 PWM base speed regardless of load.
-
 Yaw PID: Measures angular velocity around the vertical axis to correct for mechanical misalignments, resulting in a low 0.24°/s RMSE.
 
 ## 📊 Performance Evaluation
