@@ -1,6 +1,6 @@
 # Autonomous-Stair-Climbing-Robot
 
-📌 Project Overview
+##📌 Project Overview
 This project presents the design, implementation, and testing of a mobile robot capable of autonomous stair detection and navigation. By leveraging real-time feedback from an MPU6050 Inertial Measurement Unit (IMU), the system identifies stair encounters through Z-axis acceleration spikes and maintains stability using dynamic pitch and roll compensation.
 
 Key Engineering Achievements:
@@ -10,7 +10,7 @@ Control Optimization: Reduced Yaw Rate error by 60% using a tuned PID controller
 
 Hybrid Motion Control: Integrated user-defined rotation logic with path-planning algorithms to allow for autonomous "return-to-home" functionality.
 
-🛠 Tech Stack
+##🛠 Tech Stack
 Microcontroller: Arduino Mega (ATMega2560).
 
 Sensors: MPU6050 (3-Axis Accelerometer & Gyroscope).
@@ -21,7 +21,7 @@ Control Theory: PID (Proportional-Integral-Derivative) for speed and deviation c
 
 Programming: Embedded C++ (Arduino IDE).
 
-⚙️ Core Logic & Implementation
+##⚙️ Core Logic & Implementation
 1. Stair Detection Mechanism
 The robot monitors the Z-axis acceleration in real-time. When a wheel impacts a stair edge, the sudden spike (exceeding a threshold of 2.5) triggers a Torque Boost phase.
 
@@ -36,12 +36,12 @@ Speed PID: Uses tilt angle feedback to maintain a constant 83 PWM base speed reg
 
 Yaw PID: Measures angular velocity around the vertical axis to correct for mechanical misalignments, resulting in a low 0.24°/s RMSE.
 
-📊 Performance Evaluation
+##📊 Performance Evaluation
 Rotation Accuracy: Achieved a Mean Absolute Error (MAE) of 2.23° across multiple 90° and 180° test runs.
 
 Navigation Stability: Achieved a 60% reduction in yaw rate deviation compared to non-PID control systems.
 
-🚀 Future Enhancements
+##🚀 Future Enhancements
 Encoder Integration: Transitioning to physical wheel encoders for higher speed estimation precision.
 
 Adaptive PID: Implementing real-time auto-tuning for PID parameters to adapt to varying terrain materials.
